@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Check Balance</title></head>
+<body>
+<h2>Balance Inquiry</h2>
+<form action="#" th:action="@{/balance}" method="post">
+    <label>Mobile Number:</label><input type="text" name="mobile"/><br/>
+    <button type="submit">Check</button>
+</form>
+<p th:text="${message}"></p>
+</body>
+</html>

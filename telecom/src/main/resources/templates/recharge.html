@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Recharge</title></head>
+<body>
+<h2>Recharge</h2>
+<form action="#" th:action="@{/recharge}" method="post">
+    <label>Mobile Number:</label><input type="text" name="mobile"/><br/>
+    <label>Package:</label>
+    <select name="packId">
+        <option value="1">200 INR - 3GB/day</option>
+        <option value="2">300 INR - 6GB/day</option>
+    </select><br/>
+    <button type="submit">Recharge</button>
+</form>
+<p th:text="${message}"></p>
+</body>
+</html>

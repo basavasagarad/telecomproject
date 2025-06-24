@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Conversion</title></head>
+<body>
+<h2>SIM Conversion</h2>
+<form action="#" th:action="@{/conversion}" method="post">
+  <label>Mobile Number:</label><input type="text" name="mobile"/><br/>
+  <label>Type:</label>
+  <select name="type">
+    <option value="pre_to_post">Pre-paid to Post-paid</option>
+    <option value="post_to_pre">Post-paid to Pre-paid</option>
+  </select><br/>
+  <button type="submit">Convert</button>
+</form>
+<p th:text="${message}"></p>
+</body>
+</html>
